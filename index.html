@@ -2,9 +2,13 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mensura Maat - Engenharia diagnóstica, perícias judiciais e avaliações imobiliárias com rigor técnico e transparência.">
   <title>Mensura Maat</title>
   <link rel="icon" type="image/png" href="favicon-mensura-maat.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -33,10 +37,13 @@
       font-size: 1.2rem;
       margin: 0;
     }
-    section {
-      padding: 40px 20px;
+    main {
       max-width: 1000px;
       margin: 0 auto;
+      padding: 40px 20px;
+    }
+    section {
+      margin-bottom: 40px;
     }
     h2 {
       color: #1D2A40;
@@ -81,10 +88,8 @@
       background-color: #0E1A2B;
       color: #FFFFFF;
       padding: 30px;
-      border-radius: 0;
       text-align: center;
-      margin: 0;
-      width: 100%;
+      margin-bottom: 40px;
     }
     .cta h2 {
       color: #FFFFFF;
@@ -118,27 +123,6 @@
       background-color: #0066cc;
     }
   </style>
-  <script>
-    function handleFormSubmit(event) {
-      event.preventDefault();
-      const form = event.target;
-      const data = new FormData(form);
-      fetch(form.action, {
-        method: form.method,
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      }).then(response => {
-        if (response.ok) {
-          document.getElementById('success-message').style.display = 'block';
-          form.reset();
-        } else {
-          alert("Erro ao enviar. Tente novamente mais tarde.");
-        }
-      }).catch(error => {
-        alert("Erro ao enviar. Tente novamente mais tarde.");
-      });
-    }
-  </script>
 </head>
 <body>
   <header>
@@ -146,52 +130,98 @@
     <h1>NÃO CONTRATE UM ENGENHEIRO DE INSTAGRAM</h1>
     <p>Contrate quem resolve. Engenharia técnica, objetiva e responsável.</p>
   </header>
+  
+  <main>
+    <section>
+      <h2>Sobre a Mensura Maat</h2>
+      <p>Somos uma empresa especializada em engenharia diagnóstica, perícias judiciais e avaliações imobiliárias. Atuamos com rigor técnico, transparência e compromisso com a verdade — sem dancinhas, sem frases prontas, e sem enrolação.</p>
+    </section>
 
-  <section>
-    <h2>Sobre a Mensura Maat</h2>
-    <p>Somos uma empresa especializada em engenharia diagnóstica, perícias judiciais e avaliações imobiliárias. Atuamos com rigor técnico, transparência e compromisso com a verdade — sem dancinhas, sem frases prontas, e sem enrolação.</p>
-  </section>
+    <section>
+      <h2>Nossos Serviços</h2>
+      <ul>
+        <li><strong>Laudos Técnicos:</strong> Vistorias, inspeções, diagnósticos e recomendações técnicas conforme as normas da ABNT.</li>
+        <li><strong>Perícias Judiciais:</strong> Atuação como perito judicial ou assistente técnico em processos cíveis e trabalhistas.</li>
+        <li><strong>Avaliações de Imóveis:</strong> Avaliação de valor de mercado ou valor locativo, conforme NBR 14653.</li>
+        <li><strong>Inspeções Prediais:</strong> Avaliação completa da edificação para fins de manutenção, reforma ou segurança.</li>
+        <li><strong>Consultoria em Obras:</strong> Apoio técnico na execução, acompanhamento e correção de vícios construtivos.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Nossos Serviços</h2>
-    <ul>
-      <li><strong>Laudos Técnicos:</strong> Vistorias, inspeções, diagnósticos e recomendações técnicas conforme as normas da ABNT.</li>
-      <li><strong>Perícias Judiciais:</strong> Atuação como perito judicial ou assistente técnico em processos cíveis e trabalhistas.</li>
-      <li><strong>Avaliações de Imóveis:</strong> Avaliação de valor de mercado ou valor locativo, conforme NBR 14653.</li>
-      <li><strong>Inspeções Prediais:</strong> Avaliação completa da edificação para fins de manutenção, reforma ou segurança.</li>
-      <li><strong>Consultoria em Obras:</strong> Apoio técnico na execução, acompanhamento e correção de vícios construtivos.</li>
-    </ul>
-  </section>
-
-  <div class="cta">
-  <h2>Quer falar com um engenheiro de verdade?</h2>
-  <a href="https://wa.me/45999280379" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;">
-    Fale pelo WhatsApp
-  </a><br>
-  <a href="mailto:jardelguilherme@gmail.com">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="E-mail" style="width:20px; vertical-align:middle; margin-right:8px;">
-    Envie um e-mail
-  </a>
-</div>
-
-  <section>
-    <h2>Formulário de Contato</h2>
-    <div class="contact">
-      <form action="https://formspree.io/f/xanedkpv" method="POST" onsubmit="handleFormSubmit(event)">
-        <p><label>Nome:<br><input type="text" name="nome" required></label></p>
-        <p><label>E-mail:<br><input type="email" name="email" required></label></p>
-        <p><label>Mensagem:<br><textarea name="mensagem" rows="5" required></textarea></label></p>
-        <p><button type="submit">Enviar</button></p>
-        <div id="success-message" class="success-message">Mensagem enviada com sucesso!</div>
-      </form>
+    <div class="cta">
+      <h2>Quer falar com um engenheiro de verdade?</h2>
+      <a href="https://wa.me/45999280379" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;">
+        Fale pelo WhatsApp
+      </a><br>
+      <a href="mailto:jardelguilherme@gmail.com">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="E-mail" style="width:20px; vertical-align:middle; margin-right:8px;">
+        Envie um e-mail
+      </a>
     </div>
-  </section>
+
+    <section>
+      <h2>Formulário de Contato</h2>
+      <div class="contact">
+        <form action="https://formspree.io/f/xanedkpv" method="POST">
+          <p>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required>
+          </p>
+          <p>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required>
+          </p>
+          <p>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          </p>
+          <p><button type="submit">Enviar</button></p>
+          <div id="success-message" class="success-message">Mensagem enviada com sucesso!</div>
+        </form>
+        <noscript>
+          <p>Por favor, ative o JavaScript para enviar o formulário.</p>
+        </noscript>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>Mensura Maat — Engenharia com responsabilidade</p>
     <p>CNPJ: 33.783.180/0001-84 • CREA: PR 117.112/D</p>
     <p>Responsável Técnico: Eng. Civil Jardel Riedi Guilherme CREA-PR 117.112/D</p>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        const form = event.target;
+        const data = new FormData(form);
+        fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        })
+        .then(response => {
+          if (response.ok) {
+            document.getElementById('success-message').style.display = 'block';
+            form.reset();
+          } else {
+            alert("Erro ao enviar. Tente novamente mais tarde.");
+          }
+        })
+        .catch(error => {
+          alert("Erro ao enviar. Tente novamente mais tarde.");
+        });
+      }
+      
+      const contactForm = document.querySelector("form");
+      if (contactForm) {
+        contactForm.addEventListener("submit", handleFormSubmit);
+      }
+    });
+  </script>
 </body>
 </html>
+
