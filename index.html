@@ -55,13 +55,29 @@
     .skip-link:focus {
       top: 0;
     }
+
+    /* Configurações Globais */
     body {
       margin: 0;
       font-family: 'Lato', sans-serif;
       background-color: #f8f8f8;
       color: #333;
-      line-height: 1.6;
+      line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+      font-size: 16px;
     }
+
+    /* Hierarquia Tipográfica */
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.2em;
+      margin-bottom: 0.5em;
+      line-height: 1.2;
+    }
+
+    p {
+      margin-bottom: 1.5em; /* Espaço entre parágrafos */
+    }
+
+    /* Cabeçalho */
     header {
       background-color: #182435;
       color: #EDE6DC;
@@ -75,6 +91,7 @@
       border-radius: 8px;
       padding: 5px;
     }
+
     /* Menu de Navegação */
     nav {
       background-color: #333;
@@ -90,8 +107,10 @@
     nav a:hover {
       text-decoration: underline;
     }
+
+    /* Conteúdo Principal */
     main {
-      max-width: 1000px;
+      max-width: 800px; /* Limita a largura para melhorar a legibilidade */
       margin: 20px auto;
       padding: 0 20px;
     }
@@ -111,6 +130,8 @@
     ul li {
       margin: 10px 0;
     }
+
+    /* Seção CTA */
     .cta {
       background-color: #182435;
       color: #fff;
@@ -127,6 +148,8 @@
       margin-top: 10px;
       text-decoration: none;
     }
+
+    /* Formulário de Contato */
     .contact {
       background-color: #eee;
       padding: 20px;
@@ -141,6 +164,8 @@
       border: 1px solid #c3e6cb;
       border-radius: 5px;
     }
+
+    /* Rodapé */
     footer {
       background-color: #182435;
       color: #EDE6DC;
@@ -154,6 +179,8 @@
     a:hover {
       text-decoration: underline;
     }
+
+    /* Inputs e Botões */
     input, textarea {
       width: 100%;
       padding: 10px;
