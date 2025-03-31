@@ -4,11 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta Tags SEO -->
   <meta name="description" content="Mensura Maat - Engenharia diagnóstica, perícias judiciais e avaliações imobiliárias com rigor técnico e transparência.">
+  <meta name="keywords" content="engenharia, diagnóstica, perícias judiciais, avaliações imobiliárias, Mensura Maat">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Mensura Maat - Engenharia com Responsabilidade">
+  <meta property="og:description" content="Especializada em engenharia diagnóstica, perícias judiciais e avaliações imobiliárias com rigor técnico e transparência.">
+  <meta property="og:image" content="https://www.mensuramaat.com/mensuramaat_logo.png">
+  <meta property="og:url" content="https://www.mensuramaat.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mensura Maat - Engenharia com Responsabilidade">
+  <meta name="twitter:description" content="Engenharia diagnóstica, perícias judiciais e avaliações imobiliárias com rigor técnico e transparência.">
+  <meta name="twitter:image" content="https://www.mensuramaat.com/mensuramaat_logo.png">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.mensuramaat.com">
+
   <title>Mensura Maat</title>
   <link rel="icon" type="image/png" href="favicon-mensura-maat.png">
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -123,6 +146,22 @@
       background-color: #0066cc;
     }
   </style>
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Mensura Maat",
+    "url": "https://www.mensuramaat.com",
+    "logo": "https://www.mensuramaat.com/mensuramaat_logo.png",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+55-XX-XXXX-XXXX",
+      "contactType": "customer service"
+    }]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -205,23 +244,6 @@
         })
         .then(response => {
           if (response.ok) {
-            document.getElementById('success-message').style.display = 'block';
-            form.reset();
-          } else {
-            alert("Erro ao enviar. Tente novamente mais tarde.");
-          }
-        })
-        .catch(error => {
-          alert("Erro ao enviar. Tente novamente mais tarde.");
-        });
-      }
-      
-      const contactForm = document.querySelector("form");
-      if (contactForm) {
-        contactForm.addEventListener("submit", handleFormSubmit);
-      }
-    });
-  </script>
-</body>
-</html>
+            document
+
 
