@@ -37,14 +37,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) para GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJXCBWZKQQ"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FJXCBWZKQQ');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-FJXCBWZKQQ');
   </script>
   
   <!-- Google Fonts -->
@@ -65,28 +64,54 @@
     .skip-link:focus {
       top: 0;
     }
-
+    
     /* Configurações Globais */
     body {
       margin: 0;
       font-family: 'Lato', sans-serif;
       background-color: #f8f8f8;
       color: #333;
-      line-height: 1.8; /* Aumenta o espaçamento entre linhas */
-      font-size: 16px;
+      font-size: 1rem;       /* 1rem = 16px por padrão */
+      line-height: 1.8;
+      padding: 0 1rem;
     }
-
+    
     /* Hierarquia Tipográfica */
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.2em;
-      margin-bottom: 0.5em;
-      line-height: 1.2;
+    h1 {
+      font-size: 2.5rem;     /* Aproximadamente 40px */
+      font-weight: 700;
+      margin-top: 1.2rem;
+      margin-bottom: 0.5rem;
     }
-
+    h2 {
+      font-size: 2rem;       /* Aproximadamente 32px */
+      font-weight: 600;
+      margin-top: 1.2rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+    h3, h4, h5, h6 {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Parágrafos */
     p {
-      margin-bottom: 1.5em; /* Espaço entre parágrafos */
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      max-width: 800px;  /* Limita a largura para melhorar a legibilidade */
     }
-
+    
+    /* Ajustes para Links */
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    
     /* Cabeçalho */
     header {
       background-color: #182435;
@@ -95,13 +120,13 @@
       text-align: center;
     }
     header img {
-      max-width: 240px;
+      max-width: 240px;  /* Aumentado para melhor visibilidade */
       margin-bottom: 20px;
       background-color: #182435;
       border-radius: 8px;
       padding: 5px;
     }
-
+    
     /* Menu de Navegação */
     nav {
       background-color: #333;
@@ -110,28 +135,22 @@
     }
     nav a {
       color: #fff;
-      text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
+      text-decoration: none;
     }
     nav a:hover {
       text-decoration: underline;
     }
-
+    
     /* Conteúdo Principal */
     main {
-      max-width: 800px; /* Limita a largura para melhorar a legibilidade */
-      margin: 20px auto;
-      padding: 0 20px;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
     section {
       margin-bottom: 60px;
-    }
-    section h2 {
-      color: #1D2A40;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
     }
     ul {
       list-style: none;
@@ -140,7 +159,7 @@
     ul li {
       margin: 10px 0;
     }
-
+    
     /* Seção CTA */
     .cta {
       background-color: #182435;
@@ -158,7 +177,7 @@
       margin-top: 10px;
       text-decoration: none;
     }
-
+    
     /* Formulário de Contato */
     .contact {
       background-color: #eee;
@@ -174,7 +193,7 @@
       border: 1px solid #c3e6cb;
       border-radius: 5px;
     }
-
+    
     /* Rodapé */
     footer {
       background-color: #182435;
@@ -182,14 +201,7 @@
       text-align: center;
       padding: 20px;
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
+    
     /* Inputs e Botões */
     input, textarea {
       width: 100%;
@@ -212,16 +224,7 @@
       background-color: #0066cc;
     }
   </style>
-
-  <!-- Google Analytics (substitua 'UA-XXXXXXXXX-X' pelo seu ID) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-XXXXXXXXX-X');
-  </script>
-
+  
   <!-- Structured Data: Organization -->
   <script type="application/ld+json">
   {
@@ -241,14 +244,14 @@
 <body>
   <!-- Link para pular conteúdo, melhorando a acessibilidade -->
   <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
-
+  
   <!-- Cabeçalho com logo -->
   <header role="banner">
     <img src="mensuramaat_logo.png" alt="Mensura Maat Logo">
     <h1>NÃO CONTRATE UM ENGENHEIRO DE INSTAGRAM</h1>
     <p>Contrate quem resolve. Engenharia técnica, objetiva e responsável.</p>
   </header>
-
+  
   <!-- Menu de Navegação -->
   <nav role="navigation">
     <a href="#sobre">Sobre</a>
@@ -262,7 +265,7 @@
       <h2>Sobre a Mensura Maat</h2>
       <p>Somos uma empresa especializada em engenharia diagnóstica, perícias judiciais e avaliações imobiliárias. Atuamos com rigor técnico, transparência e compromisso com a verdade — sem dancinhas, sem frases prontas, e sem enrolação.</p>
     </section>
-
+    
     <!-- Seção Serviços -->
     <section id="servicos">
       <h2>Nossos Serviços</h2>
@@ -274,7 +277,7 @@
         <li><strong>Consultoria em Obras:</strong> Apoio técnico na execução, acompanhamento e correção de vícios construtivos.</li>
       </ul>
     </section>
-
+    
     <!-- Seção CTA -->
     <section class="cta">
       <h1>Quer falar com um engenheiro de verdade?</h1>
@@ -287,7 +290,7 @@
         Envie um e-mail
       </a>
     </section>
-
+    
     <!-- Seção Contato -->
     <section id="contato">
       <h2>Formulário de Contato</h2>
@@ -314,13 +317,13 @@
       </div>
     </section>
   </main>
-
+  
   <footer role="contentinfo">
     <p>Mensura Maat — Engenharia com responsabilidade</p>
     <p>CNPJ: 33.783.180/0001-84 • CREA: PR 117.112/D</p>
     <p>Responsável Técnico: Eng. Civil Jardel Riedi Guilherme CREA-PR 117.112/D</p>
   </footer>
-
+  
   <!-- JavaScript para o envio do formulário -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -352,7 +355,7 @@
       }
     });
   </script>
-
+  
   <!-- Registro do Service Worker para PWA -->
   <script>
     if ('serviceWorker' in navigator) {
