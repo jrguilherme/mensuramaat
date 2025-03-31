@@ -26,13 +26,38 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://www.mensuramaat.com">
 
+  <!-- PWA: Manifest e Theme Color -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0E1A2B">
+
+  <!-- Content Security Policy (exemplo básico) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org https://www.mensuramaat.com;">
+
   <title>Mensura Maat</title>
   <link rel="icon" type="image/png" href="favicon-mensura-maat.png">
+
+  <!-- Pré-conexão para Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
 
   <style>
+    /* Estilo para o link de pular conteúdo */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+      transition: top 0.3s;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
     body {
       margin: 0;
       font-family: 'Lato', sans-serif;
@@ -147,6 +172,15 @@
     }
   </style>
 
+  <!-- Google Analytics (substitua 'UA-XXXXXXXXX-X' pelo seu ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXXXXXX-X');
+  </script>
+
   <!-- Structured Data: Organization -->
   <script type="application/ld+json">
   {
@@ -164,13 +198,16 @@
   </script>
 </head>
 <body>
-  <header>
+  <!-- Link para pular conteúdo, melhorando a acessibilidade -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
+  <header role="banner">
     <img src="mensuramaat_logo.png" alt="Mensura Maat Logo">
     <h1>NÃO CONTRATE UM ENGENHEIRO DE INSTAGRAM</h1>
     <p>Contrate quem resolve. Engenharia técnica, objetiva e responsável.</p>
   </header>
   
-  <main>
+  <main id="main-content" role="main">
     <section>
       <h2>Sobre a Mensura Maat</h2>
       <p>Somos uma empresa especializada em engenharia diagnóstica, perícias judiciais e avaliações imobiliárias. Atuamos com rigor técnico, transparência e compromisso com a verdade — sem dancinhas, sem frases prontas, e sem enrolação.</p>
@@ -190,11 +227,11 @@
     <div class="cta">
       <h2>Quer falar com um engenheiro de verdade?</h2>
       <a href="https://wa.me/45999280379" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" loading="lazy" style="width:20px; vertical-align:middle; margin-right:8px;">
         Fale pelo WhatsApp
       </a><br>
       <a href="mailto:jardelguilherme@gmail.com">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="E-mail" style="width:20px; vertical-align:middle; margin-right:8px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="E-mail" loading="lazy" style="width:20px; vertical-align:middle; margin-right:8px;">
         Envie um e-mail
       </a>
     </div>
@@ -225,12 +262,13 @@
     </section>
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <p>Mensura Maat — Engenharia com responsabilidade</p>
     <p>CNPJ: 33.783.180/0001-84 • CREA: PR 117.112/D</p>
     <p>Responsável Técnico: Eng. Civil Jardel Riedi Guilherme CREA-PR 117.112/D</p>
   </footer>
 
+  <!-- JavaScript para o envio do formulário -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       function handleFormSubmit(event) {
@@ -244,6 +282,37 @@
         })
         .then(response => {
           if (response.ok) {
-            document
+            document.getElementById('success-message').style.display = 'block';
+            form.reset();
+          } else {
+            alert("Erro ao enviar. Tente novamente mais tarde.");
+          }
+        })
+        .catch(error => {
+          alert("Erro ao enviar. Tente novamente mais tarde.");
+        });
+      }
+      
+      const contactForm = document.querySelector("form");
+      if (contactForm) {
+        contactForm.addEventListener("submit", handleFormSubmit);
+      }
+    });
+  </script>
 
-
+  <!-- Registro do Service Worker para PWA -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function(registration) {
+            console.log('Service Worker registrado com sucesso com o escopo:', registration.scope);
+          })
+          .catch(function(error) {
+            console.log('Falha no registro do Service Worker:', error);
+          });
+      });
+    }
+  </script>
+</body>
+</html>
