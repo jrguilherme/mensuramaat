@@ -30,9 +30,6 @@
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#0E1A2B">
 
-  <!-- Content Security Policy (exemplo básico) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org https://www.mensuramaat.com;">
-
   <title>Mensura Maat</title>
   <link rel="icon" type="image/png" href="favicon-mensura-maat.png">
 
@@ -63,46 +60,72 @@
       font-family: 'Lato', sans-serif;
       background-color: #f8f8f8;
       color: #333;
+      line-height: 1.6;
     }
     header {
       background-color: #0E1A2B;
       color: #EDE6DC;
-      padding: 60px 20px;
+      padding: 20px;
       text-align: center;
     }
     header img {
       max-width: 120px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       background-color: #0E1A2B;
       border-radius: 8px;
       padding: 5px;
     }
-    header h1 {
-      font-size: 2.2rem;
-      margin: 0 0 10px;
+    /* Menu de Navegação */
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+      text-align: center;
     }
-    header p {
-      font-size: 1.2rem;
-      margin: 0;
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     main {
       max-width: 1000px;
-      margin: 0 auto;
-      padding: 40px 20px;
+      margin: 20px auto;
+      padding: 0 20px;
     }
     section {
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
-    h2 {
+    section h2 {
       color: #1D2A40;
-      padding-left: 10px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
     }
     ul {
-      list-style-type: none;
-      padding-left: 0;
+      list-style: none;
+      padding: 0;
     }
     ul li {
       margin: 10px 0;
+    }
+    .cta {
+      background-color: #0E1A2B;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .cta a {
+      display: inline-block;
+      background-color: #0066cc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      margin-top: 10px;
+      text-decoration: none;
     }
     .contact {
       background-color: #eee;
@@ -123,7 +146,6 @@
       color: #EDE6DC;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
     }
     a {
       color: #0066cc;
@@ -131,24 +153,6 @@
     }
     a:hover {
       text-decoration: underline;
-    }
-    .cta {
-      background-color: #0E1A2B;
-      color: #FFFFFF;
-      padding: 30px;
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .cta h2 {
-      color: #FFFFFF;
-    }
-    .cta a {
-      display: inline-block;
-      background-color: #0066cc;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 4px;
-      margin-top: 10px;
     }
     input, textarea {
       width: 100%;
@@ -201,19 +205,29 @@
   <!-- Link para pular conteúdo, melhorando a acessibilidade -->
   <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
 
+  <!-- Cabeçalho com logo -->
   <header role="banner">
     <img src="mensuramaat_logo.png" alt="Mensura Maat Logo">
     <h1>NÃO CONTRATE UM ENGENHEIRO DE INSTAGRAM</h1>
     <p>Contrate quem resolve. Engenharia técnica, objetiva e responsável.</p>
   </header>
+
+  <!-- Menu de Navegação -->
+  <nav role="navigation">
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
   
   <main id="main-content" role="main">
-    <section>
+    <!-- Seção Sobre -->
+    <section id="sobre">
       <h2>Sobre a Mensura Maat</h2>
       <p>Somos uma empresa especializada em engenharia diagnóstica, perícias judiciais e avaliações imobiliárias. Atuamos com rigor técnico, transparência e compromisso com a verdade — sem dancinhas, sem frases prontas, e sem enrolação.</p>
     </section>
 
-    <section>
+    <!-- Seção Serviços -->
+    <section id="servicos">
       <h2>Nossos Serviços</h2>
       <ul>
         <li><strong>Laudos Técnicos:</strong> Vistorias, inspeções, diagnósticos e recomendações técnicas conforme as normas da ABNT.</li>
@@ -224,7 +238,8 @@
       </ul>
     </section>
 
-    <div class="cta">
+    <!-- Seção CTA -->
+    <section class="cta">
       <h2>Quer falar com um engenheiro de verdade?</h2>
       <a href="https://wa.me/45999280379" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" loading="lazy" style="width:20px; vertical-align:middle; margin-right:8px;">
@@ -234,9 +249,10 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="E-mail" loading="lazy" style="width:20px; vertical-align:middle; margin-right:8px;">
         Envie um e-mail
       </a>
-    </div>
+    </section>
 
-    <section>
+    <!-- Seção Contato -->
+    <section id="contato">
       <h2>Formulário de Contato</h2>
       <div class="contact">
         <form action="https://formspree.io/f/xanedkpv" method="POST">
@@ -306,7 +322,7 @@
       window.addEventListener('load', function() {
         navigator.serviceWorker.register('/sw.js')
           .then(function(registration) {
-            console.log('Service Worker registrado com sucesso com o escopo:', registration.scope);
+            console.log('Service Worker registrado com sucesso:', registration.scope);
           })
           .catch(function(error) {
             console.log('Falha no registro do Service Worker:', error);
