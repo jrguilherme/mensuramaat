@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensura Maat</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #1D2A40;
+      color: #EDE6DC;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 120px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      margin: 0 0 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #1D2A40;
+      border-left: 5px solid #555;
+      padding-left: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin: 10px 0;
+    }
+    .contact {
+      background-color: #eee;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #1D2A40;
+      color: #EDE6DC;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .cta {
+      background-color: #1D2A40;
+      color: #EDE6DC;
+      padding: 30px;
+      border-radius: 6px;
+      text-align: center;
+      margin: 40px 0;
+    }
+    .cta a {
+      display: inline-block;
+      background-color: #0066cc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-mensura-maat.png" alt="Mensura Maat Logo">
+    <h1>NÃO CONTRATE UM ENGENHEIRO DE INSTAGRAM</h1>
+    <p>Contrate quem resolve. Engenharia técnica, objetiva e responsável.</p>
+  </header>
+
+  <section>
+    <h2>Sobre a Mensura Maat</h2>
+    <p>Somos uma empresa especializada em engenharia diagnóstica, perícias judiciais e avaliações imobiliárias. Atuamos com rigor técnico, transparência e compromisso com a verdade — sem dancinhas, sem frases prontas, e sem enrolação.</p>
+  </section>
+
+  <section>
+    <h2>Nossos Serviços</h2>
+    <ul>
+      <li><strong>Laudos Técnicos:</strong> Vistorias, inspeções, diagnósticos e recomendações técnicas conforme as normas da ABNT.</li>
+      <li><strong>Perícias Judiciais:</strong> Atuação como perito judicial ou assistente técnico em processos cíveis e trabalhistas.</li>
+      <li><strong>Avaliações de Imóveis:</strong> Avaliação de valor de mercado ou valor locativo, conforme NBR 14653.</li>
+      <li><strong>Inspeções Prediais:</strong> Avaliação completa da edificação para fins de manutenção, reforma ou segurança.</li>
+      <li><strong>Consultoria em Obras:</strong> Apoio técnico na execução, acompanhamento e correção de vícios construtivos.</li>
+    </ul>
+  </section>
+
+  <section class="cta">
+    <h2>Quer falar com um engenheiro de verdade?</h2>
+    <a href="https://wa.me/seunumero" target="_blank">Fale pelo WhatsApp</a><br>
+    <a href="mailto:contato@mensuramaat.com">Envie um e-mail</a>
+  </section>
+
+  <section>
+    <h2>Formulário de Contato</h2>
+    <div class="contact">
+      <form action="mailto:contato@mensuramaat.com" method="post" enctype="text/plain">
+        <p><label>Nome:<br><input type="text" name="nome" required></label></p>
+        <p><label>E-mail:<br><input type="email" name="email" required></label></p>
+        <p><label>Mensagem:<br><textarea name="mensagem" rows="5" required></textarea></label></p>
+        <p><input type="submit" value="Enviar"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>Mensura Maat — Engenharia com responsabilidade</p>
+    <p>CNPJ: [inserir aqui] • CREA: [inserir aqui]</p>
+  </footer>
+</body>
+</html>
