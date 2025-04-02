@@ -2,178 +2,151 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta Tags SEO -->
   <meta name="description" content="Mensura Maat - Engenharia diagnóstica, perícias judiciais e avaliações imobiliárias com rigor técnico e transparência.">
   <meta name="keywords" content="engenharia, diagnóstica, perícias judiciais, avaliações imobiliárias, Mensura Maat">
   <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Mensura Maat - Engenharia com Responsabilidade">
   <meta property="og:description" content="Especializada em engenharia diagnóstica, perícias judiciais e avaliações imobiliárias com rigor técnico e transparência.">
   <meta property="og:image" content="https://www.mensuramaat.com/mensuramaat_logo.png">
   <meta property="og:url" content="https://www.mensuramaat.com">
   <meta property="og:type" content="website">
+
+  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Mensura Maat - Engenharia com Responsabilidade">
   <meta name="twitter:description" content="Engenharia diagnóstica, perícias judiciais e avaliações imobiliárias com rigor técnico e transparência.">
   <meta name="twitter:image" content="https://www.mensuramaat.com/mensuramaat_logo.png">
+
+  <!-- Canonical -->
   <link rel="canonical" href="https://www.mensuramaat.com">
+
+  <!-- PWA: Manifest e Theme Color -->
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#182435">
+
   <title>Mensura Maat</title>
   <link rel="icon" type="image/png" href="favicon-mensura-maat.png">
-  
+
   <!-- Pré-conexão para Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Utilizando fontes inspiradas no exemplo (você pode ajustar conforme sua identidade) -->
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
-  
-  <!-- Google tag (gtag.js) para GA4 -->
+
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJXCBWZKQQ"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-FJXCBWZKQQ');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FJXCBWZKQQ');
   </script>
   
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
   <style>
-    /* CSS Reset (baseado em um reset moderno) */
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed,
-    figure, figcaption, footer, header, hgroup,
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video {
+    /* Estilo para o link de pular conteúdo */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+      transition: top 0.3s;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* Configurações Globais */
+    body {
       margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-    }
-    /* HTML5 display-role reset for older browsers */
-    article, aside, details, figcaption, figure,
-    footer, header, hgroup, menu, nav, section {
-      display: block;
-    }
-    body {
-      line-height: 1;
-      background-color: #FFFFFF;
-      /* Usando fonte 'Unbounded' para títulos e 'Red Hat Display' para subtítulos, se desejar */
-    }
-    ol, ul {
-      list-style: none;
-    }
-    blockquote, q {
-      quotes: none;
-    }
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-      content: '';
-      content: none;
-    }
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
-    *, *:before, *:after {
-      box-sizing: border-box;
-    }
-    
-    :root {
-      --viewport-height: 100vh;
-    }
-    
-    /* Estilos Globais */
-    body {
       font-family: 'Lato', sans-serif;
-      font-size: 1rem; /* 1rem = 16px */
-      line-height: 1.8;
+      background-color: #f8f8f8;
       color: #333;
-      padding: 0 1rem;
-      overflow-x: hidden;
+      line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+      font-size: 16px;
     }
-    
-    /* Layout: wrapper centralizado e responsivo */
-    #wrapper {
-      display: flex;
-      flex-direction: column;
-      min-height: var(--viewport-height);
-      align-items: center;
-      justify-content: space-between;
+
+    /* Hierarquia Tipográfica */
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.2em;
+      margin-bottom: 0.5em;
+      line-height: 1.2;
     }
-    
+
+    p {
+      margin-bottom: 1.5em; /* Espaço entre parágrafos */
+    }
+
     /* Cabeçalho */
     header {
       background-color: #182435;
       color: #EDE6DC;
-      width: 100%;
-      text-align: center;
       padding: 20px;
+      text-align: center;
     }
     header img {
-      max-width: 240px;
-      margin-bottom: 20px;
+      max-width: 580px;
+      margin-bottom: 40px;
       background-color: #182435;
       border-radius: 8px;
       padding: 5px;
     }
-    
-    /* Navegação */
+
+    /* Menu de Navegação */
     nav {
       background-color: #333;
-      width: 100%;
-      text-align: center;
       padding: 10px 0;
+      text-align: center;
     }
     nav a {
       color: #fff;
-      margin: 0 15px;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
     nav a:hover {
       text-decoration: underline;
     }
-    
+
     /* Conteúdo Principal */
     main {
-      max-width: 800px;
-      width: 100%;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      flex: 1;
+      max-width: 800px; /* Limita a largura para melhorar a legibilidade */
+      margin: 20px auto;
+      padding: 0 20px;
     }
     section {
       margin-bottom: 60px;
     }
     section h2 {
-      font-size: 2rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
       color: #1D2A40;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
     }
-    p {
-      font-size: 1rem;
-      margin-bottom: 1.5rem;
-      max-width: 800px;
+    ul {
+      list-style: none;
+      padding: 0;
     }
-    
+    ul li {
+      margin: 10px 0;
+    }
+
     /* Seção CTA */
     .cta {
       background-color: #182435;
       color: #fff;
-      text-align: center;
       padding: 30px;
+      text-align: center;
       margin-bottom: 60px;
     }
     .cta a {
@@ -182,17 +155,43 @@
       color: #fff;
       padding: 10px 20px;
       border-radius: 4px;
-      text-decoration: none;
       margin-top: 10px;
+      text-decoration: none;
     }
-    
+
     /* Formulário de Contato */
     .contact {
       background-color: #eee;
       padding: 20px;
       border-radius: 8px;
     }
-    .contact input, .contact textarea {
+    .success-message {
+      display: none;
+      margin-top: 15px;
+      padding: 15px;
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      border-radius: 5px;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #182435;
+      color: #EDE6DC;
+      text-align: center;
+      padding: 20px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Inputs e Botões */
+    input, textarea {
       width: 100%;
       padding: 10px;
       margin-top: 5px;
@@ -212,30 +211,17 @@
     button[type="submit"]:hover {
       background-color: #0066cc;
     }
-    
-    /* Rodapé com espaçamento de linhas menor */
-    footer {
-      background-color: #182435;
-      color: #EDE6DC;
-      width: 100%;
-      text-align: center;
-      padding: 20px;
-    }
-    footer p {
-      line-height: 1.2;
-    }
-    
-    /* Responsividade */
-    @media (max-width: 768px) {
-      header img {
-        max-width: 200px;
-      }
-      main {
-        padding: 0 1rem;
-      }
-    }
   </style>
-  
+
+  <!-- Google Analytics (substitua 'UA-XXXXXXXXX-X' pelo seu ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXXXXXX-X');
+  </script>
+
   <!-- Structured Data: Organization -->
   <script type="application/ld+json">
   {
@@ -253,115 +239,133 @@
   </script>
 </head>
 <body>
-  <!-- Link de acessibilidade para pular o conteúdo -->
+  <!-- Link para pular conteúdo, melhorando a acessibilidade -->
   <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
+  <!-- Cabeçalho com logo -->
+  <header role="banner">
+    <img src="mensuramaat_logo.png" alt="Mensura Maat Logo">
+    <h1>NÃO CONTRATE UM ENGENHEIRO DE INSTAGRAM</h1>
+    <p>Contrate quem resolve. Engenharia técnica, objetiva e responsável.</p>
+  </header>
+
+  <!-- Menu de Navegação -->
+  <nav role="navigation">
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
   
-  <div id="wrapper">
-    <!-- Cabeçalho -->
-    <header>
-      <img src="mensuramaat_logo.png" alt="Mensura Maat Logo">
-      <h1>NÃO CONTRATE UM ENGENHEIRO DE INSTAGRAM</h1>
-      <p>Contrate quem resolve. Engenharia técnica, objetiva e responsável.</p>
-    </header>
-    
-    <!-- Menu de Navegação -->
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
-    </nav>
-    
-    <!-- Conteúdo Principal -->
-    <main id="main-content">
-      <section id="sobre">
-        <h2>Sobre a Mensura Maat</h2>
-        <p>Somos uma empresa especializada em engenharia diagnóstica, perícias judiciais e avaliações imobiliárias. Atuamos com rigor técnico, transparência e compromisso com a verdade — sem dancinhas, sem frases prontas, e sem enrolação.</p>
-      </section>
-      
-      <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <ul>
-          <li><strong>Laudos Técnicos:</strong> Vistorias, inspeções, diagnósticos e recomendações técnicas conforme as normas da ABNT.</li>
-          <li><strong>Perícias Judiciais:</strong> Atuação como perito judicial ou assistente técnico em processos cíveis e trabalhistas.</li>
-          <li><strong>Avaliações de Imóveis:</strong> Avaliação de valor de mercado ou valor locativo, conforme NBR 14653.</li>
-          <li><strong>Inspeções Prediais:</strong> Avaliação completa da edificação para fins de manutenção, reforma ou segurança.</li>
-          <li><strong>Consultoria em Obras:</strong> Apoio técnico na execução, acompanhamento e correção de vícios construtivos.</li>
-        </ul>
-      </section>
-      
-      <section class="cta">
-        <h1>Quer falar com um engenheiro de verdade?</h1>
-        <a href="https://wa.me/45999280379" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;">
-          Fale pelo WhatsApp
-        </a><br>
-        <a href="mailto:jardelguilherme@gmail.com">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="E-mail" style="width:20px; vertical-align:middle; margin-right:8px;">
-          Envie um e-mail
-        </a>
-      </section>
-      
-      <section id="contato">
-        <h2>Formulário de Contato</h2>
-        <div class="contact">
-          <form action="https://formspree.io/f/xanedkpv" method="POST">
-            <p>
-              <label for="nome">Nome:</label><br>
-              <input type="text" id="nome" name="nome" required>
-            </p>
-            <p>
-              <label for="email">E-mail:</label><br>
-              <input type="email" id="email" name="email" required>
-            </p>
-            <p>
-              <label for="mensagem">Mensagem:</label><br>
-              <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-            </p>
-            <p><button type="submit">Enviar</button></p>
-            <div id="success-message" style="display:none;">Mensagem enviada com sucesso!</div>
-          </form>
-          <noscript>
-            <p>Por favor, ative o JavaScript para enviar o formulário.</p>
-          </noscript>
-        </div>
-      </section>
-    </main>
-    
-    <!-- Rodapé -->
-    <footer>
-      <p>Mensura Maat — Engenharia com responsabilidade</p>
-      <p>CNPJ: 33.783.180/0001-84 • CREA: PR 117.112/D</p>
-      <p>Responsável Técnico: Eng. Civil Jardel Riedi Guilherme CREA-PR 117.112/D</p>
-    </footer>
-  </div>
-  
-  <!-- JavaScript para envio do formulário -->
+  <main id="main-content" role="main">
+    <!-- Seção Sobre -->
+    <section id="sobre">
+      <h2>Sobre a Mensura Maat</h2>
+      <p>Somos uma empresa especializada em engenharia diagnóstica, perícias judiciais e avaliações imobiliárias. Atuamos com rigor técnico, transparência e compromisso com a verdade — sem dancinhas, sem frases prontas, e sem enrolação.</p>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos">
+      <h2>Nossos Serviços</h2>
+      <ul>
+        <li><strong>Laudos Técnicos:</strong> Vistorias, inspeções, diagnósticos e recomendações técnicas conforme as normas da ABNT.</li>
+        <li><strong>Perícias Judiciais:</strong> Atuação como perito judicial ou assistente técnico em processos cíveis e trabalhistas.</li>
+        <li><strong>Avaliações de Imóveis:</strong> Avaliação de valor de mercado ou valor locativo, conforme NBR 14653.</li>
+        <li><strong>Inspeções Prediais:</strong> Avaliação completa da edificação para fins de manutenção, reforma ou segurança.</li>
+        <li><strong>Consultoria em Obras:</strong> Apoio técnico na execução, acompanhamento e correção de vícios construtivos.</li>
+      </ul>
+    </section>
+
+    <!-- Seção CTA -->
+    <section class="cta">
+      <h1>Quer falar com um engenheiro de verdade?</h1>
+      <a href="https://wa.me/45999280379" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" loading="lazy" style="width:20px; vertical-align:middle; margin-right:8px;">
+        Fale pelo WhatsApp
+      </a><br>
+      <a href="mailto:jardelguilherme@gmail.com">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="E-mail" loading="lazy" style="width:20px; vertical-align:middle; margin-right:8px;">
+        Envie um e-mail
+      </a>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+      <h2>Formulário de Contato</h2>
+      <div class="contact">
+        <form action="https://formspree.io/f/xanedkpv" method="POST">
+          <p>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required>
+          </p>
+          <p>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required>
+          </p>
+          <p>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          </p>
+          <p><button type="submit">Enviar</button></p>
+          <div id="success-message" class="success-message">Mensagem enviada com sucesso!</div>
+        </form>
+        <noscript>
+          <p>Por favor, ative o JavaScript para enviar o formulário.</p>
+        </noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>Mensura Maat — Engenharia com responsabilidade</p>
+    <p>CNPJ: 33.783.180/0001-84 • CREA: PR 117.112/D</p>
+    <p>Responsável Técnico: Eng. Civil Jardel Riedi Guilherme CREA-PR 117.112/D</p>
+  </footer>
+
+  <!-- JavaScript para o envio do formulário -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      const contactForm = document.querySelector("form");
-      if (contactForm) {
-        contactForm.addEventListener("submit", function(event) {
-          event.preventDefault();
-          const data = new FormData(contactForm);
-          fetch(contactForm.action, {
-            method: contactForm.method,
-            body: data,
-            headers: { 'Accept': 'application/json' }
-          })
-          .then(response => {
-            if (response.ok) {
-              document.getElementById('success-message').style.display = 'block';
-              contactForm.reset();
-            } else {
-              alert("Erro ao enviar. Tente novamente mais tarde.");
-            }
-          })
-          .catch(error => {
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        const form = event.target;
+        const data = new FormData(form);
+        fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        })
+        .then(response => {
+          if (response.ok) {
+            document.getElementById('success-message').style.display = 'block';
+            form.reset();
+          } else {
             alert("Erro ao enviar. Tente novamente mais tarde.");
-          });
+          }
+        })
+        .catch(error => {
+          alert("Erro ao enviar. Tente novamente mais tarde.");
         });
       }
+      
+      const contactForm = document.querySelector("form");
+      if (contactForm) {
+        contactForm.addEventListener("submit", handleFormSubmit);
+      }
     });
+  </script>
+
+  <!-- Registro do Service Worker para PWA -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function(registration) {
+            console.log('Service Worker registrado com sucesso:', registration.scope);
+          })
+          .catch(function(error) {
+            console.log('Falha no registro do Service Worker:', error);
+          });
+      });
+    }
   </script>
 </body>
 </html>
