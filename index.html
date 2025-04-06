@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Meta Tags SEO -->
-  <meta name="description" content="Mensura Maat - Engenharia diagnóstica, perícias judiciais e avaliações imobiliárias com rigor técnico e transparência.">
-  <meta name="keywords" content="engenharia, diagnóstica, perícias judiciais, avaliações imobiliárias, Mensura Maat">
+  <meta name="description" content="Mensura Maat - Engenharia diagnóstica, periçias judiciais e avaliações imobiliárias com rigor técnico e transparência.">
+  <meta name="keywords" content="engenharia, diagnóstica, periçias judiciais, avaliações imobiliárias, Mensura Maat">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Mensura Maat - Engenharia com Responsabilidade">
-  <meta property="og:description" content="Especializada em engenharia diagnóstica, perícias judiciais e avaliações imobiliárias com rigor técnico e transparência.">
+  <meta property="og:description" content="Especializada em engenharia diagnóstica, periçias judiciais e avaliações imobiliárias com rigor técnico e transparência.">
   <meta property="og:image" content="https://www.mensuramaat.com/mensuramaat_logo.png">
   <meta property="og:url" content="https://www.mensuramaat.com">
   <meta property="og:type" content="website">
@@ -20,7 +20,7 @@
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Mensura Maat - Engenharia com Responsabilidade">
-  <meta name="twitter:description" content="Engenharia diagnóstica, perícias judiciais e avaliações imobiliárias com rigor técnico e transparência.">
+  <meta name="twitter:description" content="Engenharia diagnóstica, periçias judiciais e avaliações imobiliárias com rigor técnico e transparência.">
   <meta name="twitter:image" content="https://www.mensuramaat.com/mensuramaat_logo.png">
 
   <!-- Canonical -->
@@ -33,61 +33,58 @@
   <title>Mensura Maat</title>
   <link rel="icon" type="image/png" href="favicon-mensura-maat.png">
 
-  <!-- Pré-conexão para Google Fonts -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJXCBWZKQQ"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FJXCBWZKQQ');
-  </script>
-  
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
 
-  <style>
-    /* Estilo para o link de pular conteúdo */
-    .skip-link {
-      position: absolute;
-      top: -40px;
-      left: 0;
-      background: #000;
-      color: #fff;
-      padding: 8px;
-      z-index: 100;
-      transition: top 0.3s;
-    }
-    .skip-link:focus {
-      top: 0;
-    }
+  <!-- Google tag (gtag.js) - GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJXCBWZKQQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FJXCBWZKQQ');
+  </script>
 
-    /* Configurações Globais */
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Mensura Maat",
+    "url": "https://www.mensuramaat.com",
+    "logo": "https://www.mensuramaat.com/mensuramaat_logo.png",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+55-XX-XXXX-XXXX",
+      "contactType": "customer service"
+    }]
+  }
+  </script>
+
+  <!-- robots.txt e sitemap.xml estão no root do site -->
+
+  <!-- Estilo -->
+  <style>
+    .skip-link { position: absolute; top: -40px; left: 0; background: #000; color: #fff; padding: 8px; z-index: 100; transition: top 0.3s; }
+    .skip-link:focus { top: 0; }
+
     body {
       margin: 0;
       font-family: 'Lato', sans-serif;
       background-color: #f8f8f8;
       color: #333;
-      line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+      line-height: 1.5;
       font-size: 16px;
     }
-
-    /* Hierarquia Tipográfica */
     h1, h2, h3, h4, h5, h6 {
       margin-top: 1.2em;
       margin-bottom: 0.5em;
       line-height: 1.2;
     }
+    p { margin-bottom: 1.5em; }
 
-    p {
-      margin-bottom: 1.5em; /* Espaço entre parágrafos */
-    }
-
-    /* Cabeçalho */
     header {
       background-color: #182435;
       color: #EDE6DC;
@@ -102,7 +99,6 @@
       padding: 5px;
     }
 
-    /* Menu de Navegação */
     nav {
       background-color: #333;
       padding: 10px 0;
@@ -118,9 +114,8 @@
       text-decoration: underline;
     }
 
-    /* Conteúdo Principal */
     main {
-      max-width: 800px; /* Limita a largura para melhorar a legibilidade */
+      max-width: 800px;
       margin: 20px auto;
       padding: 0 20px;
     }
@@ -141,7 +136,6 @@
       margin: 10px 0;
     }
 
-    /* Seção CTA */
     .cta {
       background-color: #182435;
       color: #fff;
@@ -158,8 +152,10 @@
       margin-top: 10px;
       text-decoration: none;
     }
+    .cta a:hover {
+      background-color: #004080;
+    }
 
-    /* Formulário de Contato */
     .contact {
       background-color: #eee;
       padding: 20px;
@@ -175,7 +171,6 @@
       border-radius: 5px;
     }
 
-    /* Rodapé */
     footer {
       background-color: #182435;
       color: #EDE6DC;
@@ -190,7 +185,6 @@
       text-decoration: underline;
     }
 
-    /* Inputs e Botões */
     input, textarea {
       width: 100%;
       padding: 10px;
@@ -212,58 +206,30 @@
       background-color: #0066cc;
     }
   </style>
-
-  <!-- Google Analytics (substitua 'UA-XXXXXXXXX-X' pelo seu ID) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-XXXXXXXXX-X');
-  </script>
-
-  <!-- Structured Data: Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Mensura Maat",
-    "url": "https://www.mensuramaat.com",
-    "logo": "https://www.mensuramaat.com/mensuramaat_logo.png",
-    "contactPoint": [{
-      "@type": "ContactPoint",
-      "telephone": "+55-XX-XXXX-XXXX",
-      "contactType": "customer service"
-    }]
-  }
-  </script>
 </head>
 <body>
-  <!-- Link para pular conteúdo, melhorando a acessibilidade -->
   <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
 
-  <!-- Cabeçalho com logo -->
   <header role="banner">
-    <img src="mensuramaat_logo.png" alt="Mensura Maat Logo">
+    <img src="mensuramaat_logo.png" alt="Logo da Mensura Maat - Engenharia Diagnóstica">
     <h1>NÃO CONTRATE UM ENGENHEIRO DE INSTAGRAM</h1>
     <p>Contrate quem resolve. Engenharia técnica, objetiva e responsável.</p>
   </header>
 
-  <!-- Menu de Navegação -->
   <nav role="navigation">
     <a href="#sobre">Sobre</a>
     <a href="#servicos">Serviços</a>
     <a href="#contato">Contato</a>
+    <a href="/termos.html">Termos de Uso</a>
+    <a href="/privacidade.html">Privacidade</a>
   </nav>
-  
+
   <main id="main-content" role="main">
-    <!-- Seção Sobre -->
     <section id="sobre">
       <h2>Sobre a Mensura Maat</h2>
-      <p>Somos uma empresa especializada em engenharia diagnóstica, perícias judiciais e avaliações imobiliárias. Atuamos com rigor técnico, transparência e compromisso com a verdade — sem dancinhas, sem frases prontas, e sem enrolação.</p>
+      <p>Somos uma empresa especializada em engenharia diagnóstica, periçias judiciais e avaliações imobiliárias. Atuamos com rigor técnico, transparência e compromisso com a verdade — sem dancinhas, sem frases prontas, e sem enrolação.</p>
     </section>
 
-    <!-- Seção Serviços -->
     <section id="servicos">
       <h2>Nossos Serviços</h2>
       <ul>
@@ -275,10 +241,9 @@
       </ul>
     </section>
 
-    <!-- Seção CTA -->
     <section class="cta">
       <h1>Quer falar com um engenheiro de verdade?</h1>
-      <a href="https://wa.me/45999280379" target="_blank">
+      <a href="https://wa.me/45999280379" target="_blank" rel="noopener noreferrer">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" loading="lazy" style="width:20px; vertical-align:middle; margin-right:8px;">
         Fale pelo WhatsApp
       </a><br>
@@ -288,7 +253,6 @@
       </a>
     </section>
 
-    <!-- Seção Contato -->
     <section id="contato">
       <h2>Formulário de Contato</h2>
       <div class="contact">
@@ -321,7 +285,6 @@
     <p>Responsável Técnico: Eng. Civil Jardel Riedi Guilherme CREA-PR 117.112/D</p>
   </footer>
 
-  <!-- JavaScript para o envio do formulário -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       function handleFormSubmit(event) {
@@ -345,7 +308,7 @@
           alert("Erro ao enviar. Tente novamente mais tarde.");
         });
       }
-      
+
       const contactForm = document.querySelector("form");
       if (contactForm) {
         contactForm.addEventListener("submit", handleFormSubmit);
@@ -353,7 +316,6 @@
     });
   </script>
 
-  <!-- Registro do Service Worker para PWA -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
@@ -369,3 +331,4 @@
   </script>
 </body>
 </html>
+
