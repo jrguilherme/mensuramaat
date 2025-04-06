@@ -1,46 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Página principal -->
+  <!-- Página principal (PT-BR) -->
   <url>
     <loc>https://www.mensuramaat.com/</loc>
-    <lastmod>2025-03-31</lastmod>
+    <lastmod>2025-04-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Seções internas (opcional) -->
+  <!-- Seções internas (PT-BR) -->
   <url>
     <loc>https://www.mensuramaat.com/#sobre</loc>
-    <lastmod>2025-03-31</lastmod>
+    <lastmod>2025-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.mensuramaat.com/#servicos</loc>
-    <lastmod>2025-03-31</lastmod>
+    <lastmod>2025-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.mensuramaat.com/#contato</loc>
-    <lastmod>2025-03-31</lastmod>
+    <lastmod>2025-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Termos de Uso -->
+  <!-- Página principal (EN) -->
   <url>
-    <loc>https://www.mensuramaat.com/termos.html</loc>
+    <loc>https://www.mensuramaat.com/en/</loc>
     <lastmod>2025-04-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
-  <!-- Política de Privacidade -->
+  <!-- Seções internas (EN) -->
   <url>
-    <loc>https://www.mensuramaat.com/privacidade.html</loc>
+    <loc>https://www.mensuramaat.com/en/#about</loc>
     <lastmod>2025-04-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mensuramaat.com/en/#services</loc>
+    <lastmod>2025-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mensuramaat.com/en/#contact</loc>
+    <lastmod>2025-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
