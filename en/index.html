@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta Tags SEO -->
+  <meta name="description" content="Mensura Maat - Diagnostic engineering, judicial expert reports, and real estate appraisals with technical rigor and transparency.">
+  <meta name="keywords" content="engineering, diagnostics, judicial expertise, real estate appraisals, Mensura Maat">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Mensura Maat - Responsible Engineering">
+  <meta property="og:description" content="Specialized in diagnostic engineering, judicial expert reports, and real estate appraisals with technical rigor and transparency.">
+  <meta property="og:image" content="https://www.mensuramaat.com/mensuramaat_logo.png">
+  <meta property="og:url" content="https://www.mensuramaat.com/en">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mensura Maat - Responsible Engineering">
+  <meta name="twitter:description" content="Diagnostic engineering, judicial expert reports, and real estate appraisals with technical rigor and transparency.">
+  <meta name="twitter:image" content="https://www.mensuramaat.com/mensuramaat_logo.png">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.mensuramaat.com/en">
+
+  <!-- PWA: Manifest e Theme Color -->
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#182435">
+
+  <title>Mensura Maat</title>
+  <link rel="icon" type="image/png" href="../favicon-mensura-maat.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) - GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJXCBWZKQQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FJXCBWZKQQ');
+  </script>
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Mensura Maat",
+    "url": "https://www.mensuramaat.com/en",
+    "logo": "https://www.mensuramaat.com/mensuramaat_logo.png",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+55-45-99928-0379",
+      "contactType": "customer service"
+    }]
+  }
+  </script>
+
+  <!-- robots.txt and sitemap.xml are in the site root -->
+
+  <style>
+    .skip-link { position: absolute; top: -40px; left: 0; background: #000; color: #fff; padding: 8px; z-index: 100; transition: top 0.3s; }
+    .skip-link:focus { top: 0; }
+
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      line-height: 1.5;
+      font-size: 16px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.2em;
+      margin-bottom: 0.5em;
+      line-height: 1.2;
+    }
+    p { margin-bottom: 1.5em; }
+
+    header {
+      background-color: #182435;
+      color: #EDE6DC;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 240px;
+      margin-bottom: 20px;
+      background-color: #182435;
+      border-radius: 8px;
+      padding: 5px;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    section h2 {
+      color: #1D2A40;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 10px 0;
+    }
+
+    #services ul li {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .cta {
+      background-color: #182435;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .cta a {
+      display: inline-block;
+      background-color: #182435;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+    .cta a:hover {
+      background-color: #004080;
+    }
+
+    .contact {
+      background-color: #eee;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .success-message {
+      display: none;
+      margin-top: 15px;
+      padding: 15px;
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #182435;
+      color: #EDE6DC;
+      text-align: center;
+      padding: 20px;
+      line-height: 1.2;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button[type="submit"] {
+      margin-top: 10px;
+      background-color: #182435;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header role="banner">
+    <img src="../mensuramaat_logo.png" alt="Mensura Maat Logo - Diagnostic Engineering">
+    <h1>DON'T HIRE AN INSTAGRAM ENGINEER</h1>
+    <p>Hire someone who solves problems. Technical, objective and responsible engineering.</p>
+  </header>
+
+  <nav role="navigation">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="/termos.html">Terms</a>
+    <a href="/privacidade.html">Privacy</a>
+    <a href="/">Português</a>
+  </nav>
+
+  <main id="main-content" role="main">
+    <section id="about">
+      <h2>About Mensura Maat</h2>
+      <p>We are a company specialized in diagnostic engineering, judicial expert services and real estate appraisals. We work with technical rigor, transparency and commitment to truth — no trends, no empty phrases, and no nonsense.</p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li><strong>Technical Reports:</strong> Preparation of reports based on detailed surveys, in-person inspections and technical diagnostics, always in compliance with ABNT standards. Includes practical and evidence-based recommendations for decision-making.</li>
+        <li><strong>Judicial Expertise:</strong> Work as a court-appointed expert or party-appointed technical assistant in civil and labor lawsuits. Impartial analysis, technically substantiated and written with legal clarity.</li>
+        <li><strong>Property Appraisals:</strong> Determination of market value, rental value or residual value of real estate properties, according to NBR 14653 standards. Recognized methodology and updated references.</li>
+        <li><strong>Building Inspections:</strong> Complete technical evaluation of buildings regarding safety, maintenance and performance. Ideal for condominiums, businesses, and owners seeking to preserve their assets.</li>
+        <li><strong>Construction Consulting:</strong> Technical support in the execution of construction, renovations and remediation of building pathologies. Assistance from planning to delivery, focused on quality, safety and compliance with standards.</li>
+      </ul>
+    </section>
+
+    <section class="cta">
+      <h1>Want to talk to a real engineer?</h1>
+      <a href="https://wa.me/45999280379" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" loading="lazy" style="width:20px; vertical-align:middle; margin-right:8px;">
+        Chat on WhatsApp
+      </a><br>
+      <a href="mailto:jardelguilherme@gmail.com">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" loading="lazy" style="width:20px; vertical-align:middle; margin-right:8px;">
+        Send an Email
+      </a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Form</h2>
+      <div class="contact">
+        <form action="https://formspree.io/f/xanedkpv" method="POST">
+          <p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required>
+          </p>
+          <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+          </p>
+          <p>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </p>
+          <p><button type="submit">Send</button></p>
+          <div id="success-message" class="success-message">Message sent successfully!</div>
+        </form>
+        <noscript>
+          <p>Please enable JavaScript to send the form.</p>
+        </noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>Mensura Maat — Engineering with responsibility</p>
+    <p>Address: Rua Marechal Deodoro, 3333, Centro, Cascavel-PR CEP 85810-200</p>
+    <p>Tax ID (CNPJ): 33.783.180/0001-84 • CREA: PR 117.112/D</p>
+    <p>Technical Director: Civil Engineer Jardel Riedi Guilherme CREA-PR 117.112/D</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        const form = event.target;
+        const data = new FormData(form);
+        fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        })
+        .then(response => {
+          if (response.ok) {
+            document.getElementById('success-message').style.display = 'block';
+            form.reset();
+          } else {
+            alert("Error sending. Please try again later.");
+          }
+        })
+        .catch(error => {
+          alert("Error sending. Please try again later.");
+        });
+      }
+
+      const contactForm = document.querySelector("form");
+      if (contactForm) {
+        contactForm.addEventListener("submit", handleFormSubmit);
+      }
+    });
+  </script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../sw.js')
+          .then(function(registration) {
+            console.log('Service Worker successfully registered:', registration.scope);
+          })
+          .catch(function(error) {
+            console.log('Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
+</body>
+</html>
