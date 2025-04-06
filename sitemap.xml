@@ -7,28 +7,40 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Seção Sobre (opcional, se as âncoras forem consideradas importantes) -->
+
+  <!-- Seções internas (opcional) -->
   <url>
     <loc>https://www.mensuramaat.com/#sobre</loc>
     <lastmod>2025-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Seção Serviços (opcional) -->
   <url>
     <loc>https://www.mensuramaat.com/#servicos</loc>
     <lastmod>2025-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Seção Contato (opcional) -->
   <url>
     <loc>https://www.mensuramaat.com/#contato</loc>
     <lastmod>2025-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Termos de Uso -->
+  <url>
+    <loc>https://www.mensuramaat.com/termos.html</loc>
+    <lastmod>2025-04-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Política de Privacidade -->
+  <url>
+    <loc>https://www.mensuramaat.com/privacidade.html</loc>
+    <lastmod>2025-04-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
